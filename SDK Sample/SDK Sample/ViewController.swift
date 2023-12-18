@@ -7,6 +7,7 @@
 
 import UIKit
 import MeetingLawyers
+import MeetingLawyersSDK
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
 
     @IBAction func onClickButton(_ sender: Any) {
         self.configStyle()
+        self.configMoreSpecificStyles()
         self.authenticate()
     }
 }
@@ -27,9 +29,26 @@ extension ViewController {
         MeetingLawyersApp.setStyle(secondaryColor: .systemBlue)
     }
 
+    // always with import MeetingLawyersSDK
+    private func configMoreSpecificStyles() {
+        let topButtonBar = UIBarButtonItem(image: UIImage(systemName: "heart.fill"),
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(self.onClickNavigation))
+        MLMediQuo.style?.rootLeftBarButtonItem = topButtonBar
+        let titleViewLabel = UILabel()
+        titleViewLabel.text = "Custom Title"
+        titleViewLabel.textColor = UIColor.white
+        MLMediQuo.style?.titleView = titleViewLabel // titleView must be a UIView
+        MLMediQuo.updateStyle()
+    }
+
+    @objc private func onClickNavigation() {
+        print("onClickNavigation topButtonBar")
+    }
+
     private func authenticate() {
-        let userId = "<#userID#>"
-        MeetingLawyersApp.authenticate(userId: userId) { error in
+        MeetingLawyersApp.authenticate(userId: Constants.userId) { error in
             guard let error = error else {
                 // AUTH OK
                 self.launchProfessionalList()
