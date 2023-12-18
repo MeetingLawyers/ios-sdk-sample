@@ -10,7 +10,7 @@ use_frameworks!
 
 target 'SDK Sample' do
   # Pods for SDK Sample
-  pod 'MeetingLawyers', '~> 0.2.0'
+  pod 'MeetingLawyers', '~> 0.2.3'
 end
 
 post_install do |installer|

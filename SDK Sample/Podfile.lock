@@ -2,50 +2,50 @@ PODS:
   - Alamofire (4.9.1)
   - AlamofireImage (3.6.0):
     - Alamofire (~> 4.9)
-  - CryptoSwift (1.7.1)
-  - MeetingLawyers (0.2.0):
-    - MeetingLawyers-Controller (= 1.2.0-migration3)
-    - MeetingLawyers-Core (= 1.2.0-migration3)
-    - MeetingLawyers-Remote (= 1.2.0-migration3)
-    - MeetingLawyers-Schema (= 1.2.0-migration3)
-    - MeetingLawyers-Socket (= 1.2.0-migration3)
-    - MeetingLawyers-Storage (= 1.2.0-migration3)
-    - MeetingLawyersSDK (= 1.2.0-migration3)
+  - CryptoSwift (1.8.0)
+  - MeetingLawyers (0.2.3):
+    - MeetingLawyers-Controller (= 1.2.0-migration6)
+    - MeetingLawyers-Core (= 1.2.0-migration6)
+    - MeetingLawyers-Remote (= 1.2.0-migration6)
+    - MeetingLawyers-Schema (= 1.2.0-migration6)
+    - MeetingLawyers-Socket (= 1.2.0-migration6)
+    - MeetingLawyers-Storage (= 1.2.0-migration6)
+    - MeetingLawyersSDK (= 1.2.0-migration6)
     - MeetNetworkHTTP (~> 0.1.1)
-  - MeetingLawyers-Controller (1.2.0-migration3):
-    - MeetingLawyers-Core (= 1.2.0-migration3)
-    - MeetingLawyers-Schema (= 1.2.0-migration3)
+  - MeetingLawyers-Controller (1.2.0-migration6):
+    - MeetingLawyers-Core (= 1.2.0-migration6)
+    - MeetingLawyers-Schema (= 1.2.0-migration6)
     - RxBlocking (= 6.5.0)
     - RxSwift (= 6.5.0)
-  - MeetingLawyers-Core (1.2.0-migration3):
+  - MeetingLawyers-Core (1.2.0-migration6):
     - CryptoSwift (~> 1.0)
-  - MeetingLawyers-Remote (1.2.0-migration3):
+  - MeetingLawyers-Remote (1.2.0-migration6):
     - Alamofire (= 4.9.1)
     - AlamofireImage (= 3.6.0)
-    - MeetingLawyers-Controller (= 1.2.0-migration3)
-    - MeetingLawyers-Core (= 1.2.0-migration3)
-    - MeetingLawyers-Schema (= 1.2.0-migration3)
-  - MeetingLawyers-Schema (1.2.0-migration3):
-    - MeetingLawyers-Core (= 1.2.0-migration3)
-  - MeetingLawyers-Socket (1.2.0-migration3):
-    - MeetingLawyers-Controller (= 1.2.0-migration3)
-    - MeetingLawyers-Core (= 1.2.0-migration3)
-    - MeetingLawyers-Schema (= 1.2.0-migration3)
+    - MeetingLawyers-Controller (= 1.2.0-migration6)
+    - MeetingLawyers-Core (= 1.2.0-migration6)
+    - MeetingLawyers-Schema (= 1.2.0-migration6)
+  - MeetingLawyers-Schema (1.2.0-migration6):
+    - MeetingLawyers-Core (= 1.2.0-migration6)
+  - MeetingLawyers-Socket (1.2.0-migration6):
+    - MeetingLawyers-Controller (= 1.2.0-migration6)
+    - MeetingLawyers-Core (= 1.2.0-migration6)
+    - MeetingLawyers-Schema (= 1.2.0-migration6)
     - Socket.IO-Client-Swift (= 15.2.0)
-  - MeetingLawyers-Storage (1.2.0-migration3):
-    - MeetingLawyers-Controller (= 1.2.0-migration3)
-    - MeetingLawyers-Core (= 1.2.0-migration3)
-    - MeetingLawyers-Schema (= 1.2.0-migration3)
-    - MeetingLawyers-Socket (= 1.2.0-migration3)
+  - MeetingLawyers-Storage (1.2.0-migration6):
+    - MeetingLawyers-Controller (= 1.2.0-migration6)
+    - MeetingLawyers-Core (= 1.2.0-migration6)
+    - MeetingLawyers-Schema (= 1.2.0-migration6)
+    - MeetingLawyers-Socket (= 1.2.0-migration6)
     - RealmSwift (= 10.17.0)
-  - MeetingLawyersSDK (1.2.0-migration3):
+  - MeetingLawyersSDK (1.2.0-migration6):
     - AlamofireImage (= 3.6.0)
-    - MeetingLawyers-Controller (= 1.2.0-migration3)
-    - MeetingLawyers-Core (= 1.2.0-migration3)
-    - MeetingLawyers-Remote (= 1.2.0-migration3)
-    - MeetingLawyers-Schema (= 1.2.0-migration3)
-    - MeetingLawyers-Socket (= 1.2.0-migration3)
-    - MeetingLawyers-Storage (= 1.2.0-migration3)
+    - MeetingLawyers-Controller (= 1.2.0-migration6)
+    - MeetingLawyers-Core (= 1.2.0-migration6)
+    - MeetingLawyers-Remote (= 1.2.0-migration6)
+    - MeetingLawyers-Schema (= 1.2.0-migration6)
+    - MeetingLawyers-Socket (= 1.2.0-migration6)
+    - MeetingLawyers-Storage (= 1.2.0-migration6)
     - MessageKit (= 2.0.0)
     - OpenTok (= 2.22.3)
     - R.swift (= 5.1.0)
@@ -89,7 +89,7 @@ PODS:
   - VonageWebRTC (84.0.21)
 
 DEPENDENCIES:
-  - MeetingLawyers (~> 0.2.0)
+  - MeetingLawyers (~> 0.2.3)
 
 SPEC REPOS:
   https://bitbucket.org/meetinglawyers/ios-cocoapods-specs.git:
@@ -129,15 +129,15 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
-  CryptoSwift: d3d18dc357932f7e6d580689e065cf1f176007c1
-  MeetingLawyers: 69bc7787455d3d9fffba63a14f25d203a4d354cc
-  MeetingLawyers-Controller: 641799ac2988147b29f5eeea8dad55d5aca239a4
-  MeetingLawyers-Core: 74b90dcfd8c7a350b54a53d4c85e84104dd9c92a
-  MeetingLawyers-Remote: 0dc7dbf25799bd8f442c4c47943da7919b95f5b1
-  MeetingLawyers-Schema: 7e8c4c9b963aef433f0e604bf44215f67ae31076
-  MeetingLawyers-Socket: 079dcd6fc3ba52a0d897c62eeaeb2ebead1df06a
-  MeetingLawyers-Storage: 9de5f7c1059497c96fad3ab6f0d5699aab7154cd
-  MeetingLawyersSDK: 45b97723cceee7ca4f0099602ed502249bb95cc0
+  CryptoSwift: 52aaf3fce7337552863b1d952e408085f0e65030
+  MeetingLawyers: f90fe29f028356f5f24c3363ed0ac75f1490c248
+  MeetingLawyers-Controller: 6e35a2a50ea66495e8172475aad9fee6fb99e785
+  MeetingLawyers-Core: 40ce3b18608f633c7abca9bf05675ec106d23bd9
+  MeetingLawyers-Remote: aa4963468071c6604a3e4557f37a423974914746
+  MeetingLawyers-Schema: 823465d537f12c5ad6aa848b9d0b00cb3af39ae0
+  MeetingLawyers-Socket: 2ec5999534b20274e2444361de17e69a0b472c20
+  MeetingLawyers-Storage: 3ea918ae05da01c95d0abb4bffa0949fcdaa9a06
+  MeetingLawyersSDK: eda1f2140168cdce869bb11bf0f6adb035596121
   MeetNetworkHTTP: d2d8d485999f5ee5a7d6ace36359360779993ef5
   MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
   MessageKit: 29c1c87e5a396d2ca7a3f712e5171dc9aba42a1e
@@ -158,6 +158,6 @@ SPEC CHECKSUMS:
   TUSKit: 55f7d14c60544d6de03b8060fba90d2a4bda9e24
   VonageWebRTC: cfa7aefc3fe6e95bcbd778e8973af90fe9bfd497
 
-PODFILE CHECKSUM: 6912405672b3c5841f9a0dea90b1af69ec9594a0
+PODFILE CHECKSUM: 55c4c771f6e81c2789fe6dc0cb21ed8577da0a2c
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.2
