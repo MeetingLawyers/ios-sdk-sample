@@ -19,7 +19,7 @@ jobs:
       run: |
         pod repo update && pod install
 
-    - name: Build project
+    - name: Build project and check compile
       run: |
         xcodebuild -workspace "SDK Sample.xcworkspace" -scheme "SDK Sample" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' build
     
