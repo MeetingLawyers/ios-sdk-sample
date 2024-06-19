@@ -2,9 +2,12 @@ name: MeetingLawyersSampleSDK Tests
 
 on:
   push:
-    branches: [ CI ]
+    branches: 
+      - '**'
+
   pull_request:
-    branches: [ CI ]
+    branches:
+      - '**'
 
 jobs:
   build-and-test:
