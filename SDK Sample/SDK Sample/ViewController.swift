@@ -57,10 +57,12 @@ extension ViewController {
             // AUTH KO
         }
     }
-
+    
     private func launchProfessionalList() {
-        if let result = MeetingLawyersApp.messengerViewController() {
-            present(result, animated: true)
+        DispatchQueue.main.async {
+            if let result = MeetingLawyersApp.professionalListViewController() {
+                self.present(result, animated: true)
+            }
         }
     }
 }
