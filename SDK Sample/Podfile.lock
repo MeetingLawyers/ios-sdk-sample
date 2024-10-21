@@ -1,148 +1,29 @@
 PODS:
-  - Alamofire (4.9.1)
-  - AlamofireImage (3.6.0):
-    - Alamofire (~> 4.9)
-  - MeetingLawyers (0.2.7):
-    - MeetingLawyersSDK (= 1.2.0-migration13)
-  - MeetingLawyers-Controller (1.2.0-migration13):
-    - MeetingLawyers-Core (= 1.2.0-migration13)
-    - MeetingLawyers-Schema (= 1.2.0-migration13)
-    - RxBlocking (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - MeetingLawyers-Core (1.2.0-migration13)
-  - MeetingLawyers-Remote (1.2.0-migration13):
-    - Alamofire (= 4.9.1)
-    - AlamofireImage (= 3.6.0)
-    - MeetingLawyers-Controller (= 1.2.0-migration13)
-    - MeetingLawyers-Core (= 1.2.0-migration13)
-    - MeetingLawyers-Schema (= 1.2.0-migration13)
-  - MeetingLawyers-Schema (1.2.0-migration13):
-    - MeetingLawyers-Core (= 1.2.0-migration13)
-  - MeetingLawyers-Socket (1.2.0-migration13):
-    - MeetingLawyers-Controller (= 1.2.0-migration13)
-    - MeetingLawyers-Core (= 1.2.0-migration13)
-    - MeetingLawyers-Schema (= 1.2.0-migration13)
+  - MeetingLawyers (2.0.0-alpha50):
     - Socket.IO-Client-Swift (= 15.2.0)
-  - MeetingLawyers-Storage (1.2.0-migration13):
-    - MeetingLawyers-Controller (= 1.2.0-migration13)
-    - MeetingLawyers-Core (= 1.2.0-migration13)
-    - MeetingLawyers-Schema (= 1.2.0-migration13)
-    - MeetingLawyers-Socket (= 1.2.0-migration13)
-    - RealmSwift (= 10.17.0)
-  - MeetingLawyersSDK (1.2.0-migration13):
-    - AlamofireImage (= 3.6.0)
-    - MeetingLawyers-Controller (= 1.2.0-migration13)
-    - MeetingLawyers-Core (= 1.2.0-migration13)
-    - MeetingLawyers-Remote (= 1.2.0-migration13)
-    - MeetingLawyers-Schema (= 1.2.0-migration13)
-    - MeetingLawyers-Socket (= 1.2.0-migration13)
-    - MeetingLawyers-Storage (= 1.2.0-migration13)
-    - MessageKit (= 2.0.0)
-    - OpenTok (= 2.24.1)
-    - R.swift (= 5.1.0)
-    - RxCocoa (= 6.5.0)
-    - SDWebImage (= 5.0)
-    - Swinject (= 2.6.0)
-    - SwinjectStoryboard (= 2.2.0)
-    - TUSKit (= 3.1.5)
-  - MessageInputBar/Core (0.4.1)
-  - MessageKit (2.0.0):
-    - MessageInputBar/Core
-  - OpenTok (2.24.1):
-    - VonageWebRTC (= 99.2.39)
-  - R.swift (5.1.0):
-    - R.swift.Library (~> 5.1.0)
-  - R.swift.Library (5.1.0)
-  - Realm (10.17.0):
-    - Realm/Headers (= 10.17.0)
-  - Realm/Headers (10.17.0)
-  - RealmSwift (10.17.0):
-    - Realm (= 10.17.0)
-  - RxBlocking (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxCocoa (6.5.0):
-    - RxRelay (= 6.5.0)
-    - RxSwift (= 6.5.0)
-  - RxRelay (6.5.0):
-    - RxSwift (= 6.5.0)
-  - RxSwift (6.5.0)
-  - SDWebImage (5.0.0):
-    - SDWebImage/Core (= 5.0.0)
-  - SDWebImage/Core (5.0.0)
+    - TUSKit (= 3.3)
   - Socket.IO-Client-Swift (15.2.0):
     - Starscream (~> 3.1)
   - Starscream (3.1.1)
-  - Swinject (2.6.0)
-  - SwinjectStoryboard (2.2.0):
-    - Swinject (~> 2.6)
-  - TUSKit (3.1.5)
-  - VonageWebRTC (99.2.39)
+  - TUSKit (3.3)
 
 DEPENDENCIES:
-  - MeetingLawyers (~> 0.2.7)
+  - MeetingLawyers (= 2.0.0-alpha50)
 
 SPEC REPOS:
   https://bitbucket.org/meetinglawyers/ios-cocoapods-specs.git:
     - MeetingLawyers
-    - MeetingLawyers-Controller
-    - MeetingLawyers-Core
-    - MeetingLawyers-Remote
-    - MeetingLawyers-Schema
-    - MeetingLawyers-Socket
-    - MeetingLawyers-Storage
-    - MeetingLawyersSDK
   trunk:
-    - Alamofire
-    - AlamofireImage
-    - MessageInputBar
-    - MessageKit
-    - OpenTok
-    - R.swift
-    - R.swift.Library
-    - Realm
-    - RealmSwift
-    - RxBlocking
-    - RxCocoa
-    - RxRelay
-    - RxSwift
-    - SDWebImage
     - Socket.IO-Client-Swift
     - Starscream
-    - Swinject
-    - SwinjectStoryboard
     - TUSKit
-    - VonageWebRTC
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
-  MeetingLawyers: 864293eb1ec6e2277b7390857be6c251c33292dc
-  MeetingLawyers-Controller: 6da1c7b3431f998f741fd20c668495d92d2ba38f
-  MeetingLawyers-Core: e5b9fdeba1294f3fd9c1f300b63c8adaf827931e
-  MeetingLawyers-Remote: 21ba725f803e2c0771fa380a5af3e6641d97805d
-  MeetingLawyers-Schema: 99edb4315e671a38f12edbab9b1368dd8785f786
-  MeetingLawyers-Socket: cd29cb174e742fc5f8f05d35bd8da6956521f333
-  MeetingLawyers-Storage: 386a9b8ffd837a80f50ddc98d9c4f594b691c96d
-  MeetingLawyersSDK: fddf6930b3d34192b5ce840af576ac95862d125a
-  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
-  MessageKit: 29c1c87e5a396d2ca7a3f712e5171dc9aba42a1e
-  OpenTok: 0c23a8a8c1f2b5ef6118c57224888cd1d1d20bc2
-  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
-  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
-  Realm: 9533276bd76f66aa2fd0d3ffe700c1f6023dcab6
-  RealmSwift: 57f5d59aa29852587aad1e861989e7af139894b5
-  RxBlocking: 04b5fd28bb5ea49f7d64b80db8bbfe50d9cc1c7d
-  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
-  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
-  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
+  MeetingLawyers: 9ddef89fda83a8294af162a9c8fc61cad9128e43
   Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
-  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
-  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
-  TUSKit: 55f7d14c60544d6de03b8060fba90d2a4bda9e24
-  VonageWebRTC: 4b57187170ef4ea435006e932600646a0521d6b0
+  TUSKit: 48e6357dbaed924829b6321ec36f3f0f01a3599f
 
-PODFILE CHECKSUM: 8c25ba08bb5037082d4e11b8ec5741b03c46b1d5
+PODFILE CHECKSUM: 354b57c182e1fe07e23184cdc38b99d8df2c8972
 
 COCOAPODS: 1.15.2

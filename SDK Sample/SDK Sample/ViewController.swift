@@ -2,12 +2,9 @@
 //  ViewController.swift
 //  SDK Sample
 //
-//  Created by Manel MeetingLawyers on 27/7/22.
-//
 
 import UIKit
 import MeetingLawyers
-import MeetingLawyersSDK
 
 class ViewController: UIViewController {
 
@@ -19,7 +16,7 @@ class ViewController: UIViewController {
     @IBAction func onClickButton(_ sender: Any) {
         self.configStyle()
         self.configMoreSpecificStyles()
-        self.authenticate()
+        self.launchSdk()
     }
 }
 
@@ -29,32 +26,24 @@ extension ViewController {
         MeetingLawyersApp.setStyle(secondaryColor: .systemBlue)
     }
 
-    // always with import MeetingLawyersSDK
     private func configMoreSpecificStyles() {
-        let topButtonBar = UIBarButtonItem(image: UIImage(systemName: "heart.fill"),
-                                      style: .plain,
-                                      target: self,
-                                      action: #selector(self.onClickNavigation))
-        MLMediQuo.style?.rootLeftBarButtonItem = topButtonBar
-        let titleViewLabel = UILabel()
-        titleViewLabel.text = "Custom Title"
-        titleViewLabel.textColor = UIColor.white
-        MLMediQuo.style?.titleView = titleViewLabel // titleView must be a UIView
-        MLMediQuo.updateStyle()
+        // TODO: Add more specific styles
     }
 
     @objc private func onClickNavigation() {
         print("onClickNavigation topButtonBar")
     }
 
-    private func authenticate() {
-        MeetingLawyersApp.authenticate(userId: Constants.userId) { error in
-            guard let error = error else {
-                // AUTH OK
+    private func launchSdk() {
+        Task {
+            do {
+                try await MeetingLawyersApp.configure(apiKey: Constants.apiKey)
+                try await MeetingLawyersApp.authenticate(userId: Constants.userId)
                 self.launchProfessionalList()
-                return
+            } catch {
+                print("Error: \(error.localizedDescription)")
             }
-            // AUTH KO
+
         }
     }
     
