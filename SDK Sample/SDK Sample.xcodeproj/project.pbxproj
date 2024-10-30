@@ -14,6 +14,7 @@
 		8AEFC3E2289134B900BDADD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFC3E0289134B900BDADD9 /* Main.storyboard */; };
 		8AEFC3E4289134B900BDADD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFC3E3289134B900BDADD9 /* Assets.xcassets */; };
 		8AEFC3E7289134B900BDADD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFC3E5289134B900BDADD9 /* LaunchScreen.storyboard */; };
+		C3ABF5932CD2154000216D44 /* PushNotificationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABF5922CD2154000216D44 /* PushNotificationSample.swift */; };
 		C85195262B30615C0057BD0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85195252B30615C0057BD0F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		8AEFC3E3289134B900BDADD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AEFC3E6289134B900BDADD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AEFC3E8289134B900BDADD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3ABF5922CD2154000216D44 /* PushNotificationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSample.swift; sourceTree = "<group>"; };
 		C3CE72392CC68BFF002525FF /* SDK Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SDK Sample.entitlements"; sourceTree = "<group>"; };
 		C85195252B30615C0057BD0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F2C3C3E42AFC85A7A7ACFD5B /* Pods_SDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 				8AEFC3E3289134B900BDADD9 /* Assets.xcassets */,
 				8AEFC3E5289134B900BDADD9 /* LaunchScreen.storyboard */,
 				8AEFC3E8289134B900BDADD9 /* Info.plist */,
+				C3ABF5922CD2154000216D44 /* PushNotificationSample.swift */,
 			);
 			path = "SDK Sample";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				8AEFC3DB289134B900BDADD9 /* AppDelegate.swift in Sources */,
 				8AEFC3DD289134B900BDADD9 /* SceneDelegate.swift in Sources */,
 				C85195262B30615C0057BD0F /* Constants.swift in Sources */,
+				C3ABF5932CD2154000216D44 /* PushNotificationSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
