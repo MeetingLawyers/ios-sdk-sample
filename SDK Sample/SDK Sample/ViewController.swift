@@ -1,8 +1,3 @@
-//
-//  ViewController.swift
-//  SDK Sample
-//
-
 import UIKit
 import MeetingLawyers
 
@@ -14,8 +9,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onClickButton(_ sender: Any) {
-        self.configStyle()
-        self.configMoreSpecificStyles()
         self.launchSdk()
     }
 }
@@ -28,10 +21,6 @@ extension ViewController {
         MeetingLawyersApp.setStyle(navigationLeftBarButtons: getNavigationLeftBarButtons())
     }
 
-    private func configMoreSpecificStyles() {
-        // TODO: Add more specific styles
-    }
-
     @objc private func onClickNavigation() {
         print("onClickNavigation topButtonBar")
     }
@@ -41,9 +30,11 @@ extension ViewController {
             do {
                 let configuration = MeetingLawyersConfiguration(apiKey: Constants.apiKey, environment: RemoteEnvironment.development, logType: .debug)
                 try await MeetingLawyersApp.configure(configuration)
+                self.configStyle()
                 try await MeetingLawyersApp.authenticate(userId: Constants.userId)
                 self.launchProfessionalList()
             } catch {
+                showAlert(errorMessage: error.localizedDescription)
                 print("Error: \(error.localizedDescription)")
             }
 
@@ -67,7 +58,7 @@ extension ViewController {
 
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(systemName: "heart.fill")
+        imageView.image = UIImage(named: "ml_logo")
         imageView.contentMode = .scaleAspectFit
 
         titleView.addSubview(imageView)
@@ -91,5 +82,11 @@ extension ViewController {
     }
     @objc func onClickNavigationRightButton() {
         print("onClickNavigationRightButton")
+    }
+
+    private func showAlert(errorMessage: String) {
+        let alert = UIAlertController(title: "Error", message: "\(errorMessage)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 }
