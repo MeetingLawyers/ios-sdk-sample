@@ -6,20 +6,18 @@
 //
 
 import UIKit
-import MeetingLawyers
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    private let pushNotificationSample = PushNotificationSample()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-        MeetingLawyersApp.configure(apiKey: Constants.apiKey) { error in
-            // Handle error
-        }
-
+        // FIXME: Enable push notifications to receive messages
+        /// To uncomment this line you need to have the constants apiKey and userId set in Constants.swift and a valid GoogleService-Info.plist
+        // pushNotificationSample.configurePush(application: application)
         return true
     }
 

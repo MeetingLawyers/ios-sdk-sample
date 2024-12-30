@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A15EAAAFE147E5C93486D18 /* Pods_SDK_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C3C3E42AFC85A7A7ACFD5B /* Pods_SDK_Sample.framework */; };
 		8AEFC3DB289134B900BDADD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEFC3DA289134B900BDADD9 /* AppDelegate.swift */; };
 		8AEFC3DD289134B900BDADD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEFC3DC289134B900BDADD9 /* SceneDelegate.swift */; };
 		8AEFC3DF289134B900BDADD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEFC3DE289134B900BDADD9 /* ViewController.swift */; };
 		8AEFC3E2289134B900BDADD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFC3E0289134B900BDADD9 /* Main.storyboard */; };
 		8AEFC3E4289134B900BDADD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFC3E3289134B900BDADD9 /* Assets.xcassets */; };
 		8AEFC3E7289134B900BDADD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AEFC3E5289134B900BDADD9 /* LaunchScreen.storyboard */; };
+		C3ABF5932CD2154000216D44 /* PushNotificationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABF5922CD2154000216D44 /* PushNotificationSample.swift */; };
+		C3DA7D4B2D0045BB005D7D4E /* MeetingLawyers in Frameworks */ = {isa = PBXBuildFile; productRef = C3DA7D4A2D0045BB005D7D4E /* MeetingLawyers */; };
+		C3DA7D512D00467F005D7D4E /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = C3DA7D502D00467F005D7D4E /* FirebaseMessaging */; };
 		C85195262B30615C0057BD0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85195252B30615C0057BD0F /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		06034EA91FB0FA1E4E8EF961 /* Pods-SDK Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDK Sample.debug.xcconfig"; path = "Target Support Files/Pods-SDK Sample/Pods-SDK Sample.debug.xcconfig"; sourceTree = "<group>"; };
-		55E49484A6BE1716FCE1642F /* Pods-SDK Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDK Sample.release.xcconfig"; path = "Target Support Files/Pods-SDK Sample/Pods-SDK Sample.release.xcconfig"; sourceTree = "<group>"; };
 		8AEFC3D7289134B900BDADD9 /* SDK Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SDK Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEFC3DA289134B900BDADD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AEFC3DC289134B900BDADD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +28,9 @@
 		8AEFC3E3289134B900BDADD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AEFC3E6289134B900BDADD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AEFC3E8289134B900BDADD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3ABF5922CD2154000216D44 /* PushNotificationSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSample.swift; sourceTree = "<group>"; };
+		C3CE72392CC68BFF002525FF /* SDK Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SDK Sample.entitlements"; sourceTree = "<group>"; };
 		C85195252B30615C0057BD0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F2C3C3E42AFC85A7A7ACFD5B /* Pods_SDK_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SDK_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,29 +38,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A15EAAAFE147E5C93486D18 /* Pods_SDK_Sample.framework in Frameworks */,
+				C3DA7D512D00467F005D7D4E /* FirebaseMessaging in Frameworks */,
+				C3DA7D4B2D0045BB005D7D4E /* MeetingLawyers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A9F459CAE553E2A52B7AAD4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				06034EA91FB0FA1E4E8EF961 /* Pods-SDK Sample.debug.xcconfig */,
-				55E49484A6BE1716FCE1642F /* Pods-SDK Sample.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		8AEFC3CE289134B900BDADD9 = {
 			isa = PBXGroup;
 			children = (
 				8AEFC3D9289134B900BDADD9 /* SDK Sample */,
 				8AEFC3D8289134B900BDADD9 /* Products */,
-				6A9F459CAE553E2A52B7AAD4 /* Pods */,
-				B8FE5704943DC708F543777D /* Frameworks */,
+				C3DA7D4F2D00467F005D7D4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +66,7 @@
 		8AEFC3D9289134B900BDADD9 /* SDK Sample */ = {
 			isa = PBXGroup;
 			children = (
+				C3CE72392CC68BFF002525FF /* SDK Sample.entitlements */,
 				C85195252B30615C0057BD0F /* Constants.swift */,
 				8AEFC3DA289134B900BDADD9 /* AppDelegate.swift */,
 				8AEFC3DC289134B900BDADD9 /* SceneDelegate.swift */,
@@ -82,14 +75,14 @@
 				8AEFC3E3289134B900BDADD9 /* Assets.xcassets */,
 				8AEFC3E5289134B900BDADD9 /* LaunchScreen.storyboard */,
 				8AEFC3E8289134B900BDADD9 /* Info.plist */,
+				C3ABF5922CD2154000216D44 /* PushNotificationSample.swift */,
 			);
 			path = "SDK Sample";
 			sourceTree = "<group>";
 		};
-		B8FE5704943DC708F543777D /* Frameworks */ = {
+		C3DA7D4F2D00467F005D7D4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F2C3C3E42AFC85A7A7ACFD5B /* Pods_SDK_Sample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,17 +94,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8AEFC3EB289134B900BDADD9 /* Build configuration list for PBXNativeTarget "SDK Sample" */;
 			buildPhases = (
-				CEFAC52F074E2A920FB8586A /* [CP] Check Pods Manifest.lock */,
 				8AEFC3D3289134B900BDADD9 /* Sources */,
 				8AEFC3D4289134B900BDADD9 /* Frameworks */,
 				8AEFC3D5289134B900BDADD9 /* Resources */,
-				5C1B304E6CA5B6E31568C149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "SDK Sample";
+			packageProductDependencies = (
+				C3DA7D4A2D0045BB005D7D4E /* MeetingLawyers */,
+				C3DA7D502D00467F005D7D4E /* FirebaseMessaging */,
+			);
 			productName = "SDK Sample";
 			productReference = 8AEFC3D7289134B900BDADD9 /* SDK Sample.app */;
 			productType = "com.apple.product-type.application";
@@ -140,6 +135,10 @@
 				Base,
 			);
 			mainGroup = 8AEFC3CE289134B900BDADD9;
+			packageReferences = (
+				C3DA7D492D0045BB005D7D4E /* XCRemoteSwiftPackageReference "ios-sdk-spm-meetinglawyers" */,
+				C3DA7D4C2D00464F005D7D4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8AEFC3D8289134B900BDADD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,48 +161,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5C1B304E6CA5B6E31568C149 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDK Sample/Pods-SDK Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SDK Sample/Pods-SDK Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SDK Sample/Pods-SDK Sample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CEFAC52F074E2A920FB8586A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SDK Sample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		8AEFC3D3289134B900BDADD9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -213,6 +170,7 @@
 				8AEFC3DB289134B900BDADD9 /* AppDelegate.swift in Sources */,
 				8AEFC3DD289134B900BDADD9 /* SceneDelegate.swift in Sources */,
 				C85195262B30615C0057BD0F /* Constants.swift in Sources */,
+				C3ABF5932CD2154000216D44 /* PushNotificationSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +232,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -289,10 +246,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -335,7 +293,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -344,9 +301,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-no-verify-emitted-module-interface";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -356,11 +314,11 @@
 		};
 		8AEFC3EC289134B900BDADD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06034EA91FB0FA1E4E8EF961 /* Pods-SDK Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "SDK Sample/SDK Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6RYBTGZW2H;
@@ -371,9 +329,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meetinglawyers.SDK-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -382,11 +345,11 @@
 		};
 		8AEFC3ED289134B900BDADD9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55E49484A6BE1716FCE1642F /* Pods-SDK Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_ENTITLEMENTS = "SDK Sample/SDK Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6RYBTGZW2H;
@@ -397,9 +360,14 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.meetinglawyers.SDK-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -428,6 +396,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3DA7D492D0045BB005D7D4E /* XCRemoteSwiftPackageReference "ios-sdk-spm-meetinglawyers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MeetingLawyers/ios-sdk-spm-meetinglawyers";
+			requirement = {
+				kind = exactVersion;
+				version = 2.0.0;
+			};
+		};
+		C3DA7D4C2D00464F005D7D4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3DA7D4A2D0045BB005D7D4E /* MeetingLawyers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3DA7D492D0045BB005D7D4E /* XCRemoteSwiftPackageReference "ios-sdk-spm-meetinglawyers" */;
+			productName = MeetingLawyers;
+		};
+		C3DA7D502D00467F005D7D4E /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3DA7D4C2D00464F005D7D4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AEFC3CF289134B900BDADD9 /* Project object */;
 }

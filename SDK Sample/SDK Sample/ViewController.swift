@@ -1,13 +1,5 @@
-//
-//  ViewController.swift
-//  SDK Sample
-//
-//  Created by Manel MeetingLawyers on 27/7/22.
-//
-
 import UIKit
 import MeetingLawyers
-import MeetingLawyersSDK
 
 class ViewController: UIViewController {
 
@@ -17,9 +9,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onClickButton(_ sender: Any) {
-        self.configStyle()
-        self.configMoreSpecificStyles()
-        self.authenticate()
+        self.launchSdk()
     }
 }
 
@@ -27,34 +17,27 @@ extension ViewController {
     private func configStyle() {
         MeetingLawyersApp.setStyle(primaryColor: .blue)
         MeetingLawyersApp.setStyle(secondaryColor: .systemBlue)
-    }
-
-    // always with import MeetingLawyersSDK
-    private func configMoreSpecificStyles() {
-        let topButtonBar = UIBarButtonItem(image: UIImage(systemName: "heart.fill"),
-                                      style: .plain,
-                                      target: self,
-                                      action: #selector(self.onClickNavigation))
-        MLMediQuo.style?.rootLeftBarButtonItem = topButtonBar
-        let titleViewLabel = UILabel()
-        titleViewLabel.text = "Custom Title"
-        titleViewLabel.textColor = UIColor.white
-        MLMediQuo.style?.titleView = titleViewLabel // titleView must be a UIView
-        MLMediQuo.updateStyle()
+        MeetingLawyersApp.setStyle(navigationTitleView: getNavigationLogoView())
+        MeetingLawyersApp.setStyle(navigationLeftBarButtons: getNavigationLeftBarButtons())
     }
 
     @objc private func onClickNavigation() {
         print("onClickNavigation topButtonBar")
     }
 
-    private func authenticate() {
-        MeetingLawyersApp.authenticate(userId: Constants.userId) { error in
-            guard let error = error else {
-                // AUTH OK
+    private func launchSdk() {
+        Task {
+            do {
+                let configuration = MeetingLawyersConfiguration(apiKey: Constants.apiKey, environment: RemoteEnvironment.development, logType: .debug)
+                try await MeetingLawyersApp.configure(configuration)
+                self.configStyle()
+                try await MeetingLawyersApp.authenticate(userId: Constants.userId)
                 self.launchProfessionalList()
-                return
+            } catch {
+                showAlert(errorMessage: error.localizedDescription)
+                print("Error: \(error.localizedDescription)")
             }
-            // AUTH KO
+
         }
     }
     
@@ -64,5 +47,46 @@ extension ViewController {
                 self.present(result, animated: true)
             }
         }
+    }
+}
+
+extension ViewController {
+
+    private func getNavigationLogoView() -> UIView {
+        let titleView = UIView(frame: CGRect.zero)
+        titleView.translatesAutoresizingMaskIntoConstraints = false
+
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.image = UIImage(named: "ml_logo")
+        imageView.contentMode = .scaleAspectFit
+
+        titleView.addSubview(imageView)
+
+        NSLayoutConstraint.activate([
+            imageView.widthAnchor.constraint(equalToConstant: 150),
+            imageView.heightAnchor.constraint(equalToConstant: 50),
+            imageView.centerXAnchor.constraint(equalTo: titleView.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: titleView.centerYAnchor)
+        ])
+        return titleView
+    }
+
+    private func getNavigationLeftBarButtons() -> [UIBarButtonItem] {
+        // Add top button bar
+        let rightButton = UIBarButtonItem(image: UIImage(systemName: "heart.fill"),
+                                              style: .plain,
+                                              target: self,
+                                              action: #selector(self.onClickNavigationRightButton))
+        return [rightButton]
+    }
+    @objc func onClickNavigationRightButton() {
+        print("onClickNavigationRightButton")
+    }
+
+    private func showAlert(errorMessage: String) {
+        let alert = UIAlertController(title: "Error", message: "\(errorMessage)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 }
