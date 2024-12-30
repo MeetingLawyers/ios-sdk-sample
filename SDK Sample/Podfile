@@ -9,7 +9,7 @@ use_frameworks!
 
 target 'SDK Sample' do
   # Pods for SDK Sample
-  pod 'MeetingLawyers', '2.0.0-beta06'
+  pod 'MeetingLawyers', '2.0.0'
   pod 'FirebaseMessaging', '10.24.0' 
 end
 post_install do |installer|
