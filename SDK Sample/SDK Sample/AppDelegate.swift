@@ -14,10 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        // FIXME: Enable push notifications to receive messages
-        /// To uncomment this line you need to have the constants apiKey and userId set in Constants.swift and a valid GoogleService-Info.plist
-        // pushNotificationSample.configurePush(application: application)
+        // Push notifications: requires GoogleService-Info.plist (bundled) and the
+        // apiKey/userId constants set in Constants.swift to receive messages.
+        pushNotificationSample.configurePush(application: application)
         return true
     }
 
