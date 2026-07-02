@@ -1,2 +1,5 @@
 
 .DS_Store
+
+# GoogleService-Info.plist committed on purpose: Firebase client config for
+# com.meetinglawyers.sdk.sample (client keys are not secrets — Rules/App Check enforce access).
